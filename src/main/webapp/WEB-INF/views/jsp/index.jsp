@@ -66,7 +66,7 @@
 
 	<hr>
 	<footer>
-		<p>&copy; Mkyong.com 2015</p>
+		<p>&copy; cloud 2016</p>
 	</footer>
 </div>
 
