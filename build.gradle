@@ -1,6 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'war'
-apply plugin: 'eclipse-wtp'
+apply plugin: 'idea'
 apply plugin: 'jetty'
 
 // JDK 7
@@ -31,17 +31,5 @@ jettyRunWar{
 	httpPort = 8080
 }
 
-//For Eclipse IDE only
-eclipse {
 
-  wtp {
-    component {
-      
-      //define context path, default to project folder name
-      contextPath = 'spring4'
-      
-    }
-    
-  }
-}
 
