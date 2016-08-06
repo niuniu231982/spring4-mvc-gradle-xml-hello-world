@@ -24,7 +24,7 @@ Access ```http://localhost:8080/spring4```
 ###4. To debug this project from IDEA IDE
 1. configure the remote, set the port 9999
 2. Start jetty with jvm setting
-gradle jR -Dorg.gradle.jvmargs="-Xdebug -Xrunjdwp:transport=dt_socket,address=9999,server=y,suspend=n"
+gradle jR -Dorg.gradle.jvmargs="-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 -Xdebug -Xrunjdwp:transport=dt_socket,address=9999,server=y,suspend=n"
 3. click debug from IDEA
 Connected to the target VM, address: 'localhost:9999', transport: 'socket'
 4. with breakpoint, you can debug the code
